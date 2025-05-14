@@ -1,0 +1,178 @@
+.start-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.game-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.orange-logo {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  margin: 0.5rem 0 1.5rem;
+  text-align: center;
+}
+
+.rules-container {
+  margin-bottom: 1rem;
+}
+
+.rules-container h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.rule-item {
+  background: #f8f8f8;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  color: #666;
+  font-size: 14px;
+  text-align: left;
+}
+
+.score-display {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.play-button {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.play-button:hover {
+  transform: translateY(-1px);
+  background: #45a049;
+}
+
+.login-panel {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 8px;
+}
+
+.auth-button.google {
+  text-transform: lowercase;
+}
+
+.auth-button.connect-wallet {
+  color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+.auth-button:hover {
+  transform: translateY(-1px);
+  background: #f5f5f5;
+}
+
+.dark .auth-button {
+  background: #2a2a2a;
+  border-color: #444;
+  color: #ddd;
+}
+
+.dark .auth-button.connect-wallet {
+  color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Dark mode styles */
+.dark .game-card {
+  background: #1a1a1a;
+}
+
+.dark h1 {
+  color: #fff;
+}
+
+.dark .rule-item {
+  background: #2a2a2a;
+  color: #ddd;
+}
+
+.dark .score-display {
+  color: #ddd;
+}
+
+.dark .auth-button {
+  background: #2a2a2a !important;
+  border-color: #444 !important;
+  color: #ddd !important;
+}
+
+.dark .connect-wallet {
+  color: #ff6b00 !important;
+  border-color: #ff6b00 !important;
+}
+
+.play-button, .auth-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.play-button i {
+  font-size: 14px;
+}
+
+.auth-button i {
+  font-size: 16px;
+}
